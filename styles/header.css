@@ -2,3 +2,15 @@
     gap: 15px;
     align-items: center;
 }
+
+.header__list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    
+    align-items: center;
+    padding-top: 5px;
+    padding-left: 341px;
+    gap: 40px;
+}

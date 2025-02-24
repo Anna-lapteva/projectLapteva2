@@ -1,6 +1,3 @@
-.mainpage{
-    top: -200px;
-}
 
 .button{
     transition: background-color 0.3s,
@@ -15,4 +12,77 @@
 .button:active{
     background-color: blue;
     color: white;
+}
+
+.mainpage{
+    margin-top: -500px;
+    margin-left: 350px;
+}
+
+.mainpage__title{
+    color: white;
+}
+.mainpage__description{
+    color: white;
+}
+
+.partners{
+    margin-top: 350px;
+    align-items: center;
+    margin-left: 780px;
+}
+
+.partners__list{
+    margin-left: -100px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    gap: 60px;
+}
+
+
+.benefits1{
+    width: 368px;
+    margin-left: 500px;
+}
+.benefits__wrap1{
+    background-image: url(..images/photo3.png);
+    margin-top: -400px;
+    margin-left: 1000px;
+}
+.benefits2{
+    width: 368px;
+    margin-left: 1100px;
+}
+.benefits__wrap2{
+    background-image: url(..images/photo4.png);
+    margin-top: -350px;
+    margin-left: 500px;
+}
+
+.benefits3{
+    width: 368px;
+    margin-left: 500px;
+}
+.benefits__wrap3{
+    background-image: url(..images/photo5.png);
+    margin-top: -400px;
+    margin-left: 1000px;
+}
+
+.review__wrap{
+    background-image: url(..images/photo2.png);
+    margin-top: -50px;
+}
+
+.review{
+    width: 500px;
+    margin-left: 1100px;
+    margin-top: -350px;
+    margin-bottom: 140px;
 }

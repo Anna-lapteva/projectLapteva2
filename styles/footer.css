@@ -2,3 +2,7 @@
     background-color: #043CAA;
     height: 300px;
 }
+
+.footer__list{
+    list-style-type: none;
+}
