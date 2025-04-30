@@ -1,6 +1,7 @@
 .header container{
     gap: 15px;
     align-items: center;
+
 }
 
 .header__list{
@@ -8,7 +9,7 @@
     padding: 0;
     list-style-type: none;
     display: flex;
-    
+    height: 50px;
     align-items: center;
     padding-top: 5px;
     padding-left: 341px;
