@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+
     <header class="header container">
         <nav class="header__list">
         <a class="header__item-link" href="#">Элексир здоровья</a>
@@ -58,6 +59,65 @@
              </div>
              <img class="benefits__wrap3" src="images/photo5.png">  
      </div>
+     <div class="carousel-container">
+        <h2 class="carousel-title">Популярные БАДы</h2>
+        
+        <button class="carousel-arrow prev">&#10094;</button>
+        
+        <div class="carousel" id="carousel">
+            <!-- Карточка БАДа 1 -->
+            <div class="product-card">
+                <img src="images/1.webp" alt="Омега-3" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Омега-3 Premium</h3>
+                    <p class="product-description">Высококонцентрированные жирные кислоты из диких рыб северных морей. Поддерживает здоровье сердца и сосудов.</p>
+                    <div class="product-price">1 490 ₽</div>
+                    <button class="product-button">Купить</button>
+                </div>
+            </div>
+            
+            <!-- Карточка БАДа 2 -->
+            <div class="product-card">
+                <img src="images/2.webp" alt="Коллаген" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Морской коллаген</h3>
+                    <p class="product-description">Гидролизованный коллаген I типа для здоровья суставов, кожи и волос. Высокая биодоступность.</p>
+                    <div class="product-price">2 290 ₽</div>
+                    <button class="product-button">Купить</button>
+                </div>
+            </div>
+            
+            <!-- Карточка БАДа 3 -->
+            <div class="product-card">
+                <img src="images/3.jpg" alt="Витамин D3" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Витамин D3 + K2</h3>
+                    <p class="product-description">Оптимальная комбинация витаминов для усвоения кальция, поддержки иммунитета и здоровья костей.</p>
+                    <div class="product-price">890 ₽</div>
+                    <button class="product-button">Купить</button>
+                </div>
+            </div>
+            
+             <!-- Карточка БАДа 4 -->
+             <div class="product-card">
+                <img src="images/4.webp" alt="Витамин D3" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Хелатное железо</h3>
+                    <p class="product-description">Железо поддерживает выработку красных кровяных телец и использование вырабатываемой в организме энергии.</p>
+                    <div class="product-price">2 690 ₽</div>
+                    <button class="product-button">Купить</button>
+                </div>
+            </div>         
+        </div>
+        
+        <button class="carousel-arrow next">&#10095;</button>
+        
+        <div class="carousel-nav" id="carousel-nav">
+            <div class="carousel-dot active"></div>
+            <div class="carousel-dot"></div>
+            <div class="carousel-dot"></div>
+        </div>
+    </div>
         <img class="review__wrap" src="images/photo2.png">
     <div class="review">
         <h2 class="review__title">Что о нас говорят клиенты</h2>
@@ -77,5 +137,29 @@
         </div>
     </footer>
     <script src="scripts/script.js"></script>
+    <!-- Кнопка "Наверх" -->
+    <button id="back-to-top" title="Наверх">
+        <div class="arrow-up"></div>
+    </button>
+    <div class="modal" id="orderModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">Оформление заказа</h2>
+            <p class="modal-text">Вы выбрали: <span id="selectedProduct"></span></p>
+            <form class="modal-form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Ваш телефон" required>
+                <input type="email" placeholder="Ваш email">
+                <button type="submit" class="modal-submit">Подтвердить заказ</button>
+            </form>
+        </div>
+    </div>
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <div class="loader-inner"></div>
+            <div class="loader-inner"></div>
+            <div class="loader-inner"></div>
+        </div>
+    </div>
 </body>
 </html>
