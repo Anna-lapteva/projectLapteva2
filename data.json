@@ -1,0 +1,31 @@
+[
+    {
+         "link": "#",
+         "icon": "images/profile.png",
+         "iconAlt": "Профиль",
+         "iconWidth": 22,
+         "iconHeight": 24
+     },
+     {
+         "link": "#",
+         "icon": "images/find.png",
+         "iconAlt": "Поиск",
+         "iconWidth": 24,
+         "iconHeight": 24
+     },
+     {
+         "link": "#",
+         "icon": "images/like.png",
+         "iconAlt": "Избранное",
+         "iconWidth": 24,
+         "iconHeight": 23
+     },
+     {
+         "link": "#",
+         "icon": "images/bag.png",
+         "iconAlt": "Корзина",
+         "iconWidth": 24,
+         "iconHeight": 23
+     }
+ ]
+ 

@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
     <header class="header container">
-        <nav class="header__list">
-        <a class="header__item-link" href="#">Элексир здоровья</a>
+        <nav class="header__nav">
+    <ul class="header__list">
+        <!-- <a class="header__item-link" href="#">Элексир здоровья</a>
         <a class="header__item-link" href="#">Заполнить рецепт</a>
         <a class="header__item-link" href="#">Купить БАДЫ</a>
         <a class="header__item-link" href="#">Проконсультироваться</a>
-    </nav>
+            <img class="header__photo profile-icon" src="images/profile.png" alt="Профиль" width="25,97" height="25,97">
+                <img class="header__photo search-icon" src="images/find.png" alt="Поиск" width="20" height="20">
+                    <li class="header__search-container"></li>
+               <img class="header__photo" src="images/like.png" alt="Избранное" width="28" height="26">
+               <img class="header__photo" src="images/bag.png" alt="Корзина" width="26" height="26">
+            -->
+               </ul>
+            </nav>
+            
     </header>
     <main>
         <img class="mainpage__wrap" src="images/photo1.png"  width="1920" height="1080" alt="Задний фон">
@@ -59,65 +69,48 @@
              </div>
              <img class="benefits__wrap3" src="images/photo5.png">  
      </div>
-     <div class="carousel-container">
-        <h2 class="carousel-title">Популярные БАДы</h2>
-        
-        <button class="carousel-arrow prev">&#10094;</button>
-        
-        <div class="carousel" id="carousel">
-            <!-- Карточка БАДа 1 -->
-            <div class="product-card">
-                <img src="images/1.webp" alt="Омега-3" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Омега-3 Premium</h3>
-                    <p class="product-description">Высококонцентрированные жирные кислоты из диких рыб северных морей. Поддерживает здоровье сердца и сосудов.</p>
-                    <div class="product-price">1 490 ₽</div>
-                    <button class="product-button">Купить</button>
+              <section class="section card card--slider swiper">
+                <div class="card__list card__list--slider swiper-wrapper">
+                    <a class="card__item swiper-slide" href="#">
+                        <span class="card__icon">
+                            <img src="images/icon.png" alt="Иконка" width="100" height="100">
+                        </span>
+                        <h3 class="card__title">Витамины</h3>
+                        <p class="card__description">Витамины A, группы B, C, D, E, K</p>
+                    </a>
+                    <a class="card__item swiper-slide" href="#">
+                        <span class="card__icon">
+                            <img src="images/icon.png" alt="Иконка" width="100" height="100">
+                        </span>
+                        <h3 class="card__title">Минералы</h3>
+                        <p class="card__description">Калий, натрий, кальций, фосфор, железо и др.</p>
+                    </a>
+                    <a class="card__item swiper-slide" href="#">
+                        <span class="card__icon">
+                            <img src="images/icon.png" alt="Иконка" width="100" height="100">
+                        </span>
+                        <h3 class="card__title">Аминокислоты</h3>
+                        <p class="card__description">Валин, изолейцин, лейцин, лизин и др.</p>
+                    </a>
+                    <a class="card__item swiper-slide" href="#">
+                        <span class="card__icon">
+                            <img src="images/icon.png" alt="Иконка" width="100" height="100">
+                        </span>
+                        <h3 class="card__title">Пробиотики</h3>
+                        <p class="card__description">Бифидобактерии и лактобактерии</p>
+                    </a>
+                    <a class="card__item swiper-slide" href="#">
+                        <span class="card__icon">
+                            <img src="images/icon.png" alt="Иконка" width="100" height="100">
+                        </span>
+                        <h3 class="card__title">Другие добавки</h3>
+                        <p class="card__description">Ферменты, адаптогены, пищевые волкона и т.д.</p>
+                    </a>
                 </div>
-            </div>
-            
-            <!-- Карточка БАДа 2 -->
-            <div class="product-card">
-                <img src="images/2.webp" alt="Коллаген" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Морской коллаген</h3>
-                    <p class="product-description">Гидролизованный коллаген I типа для здоровья суставов, кожи и волос. Высокая биодоступность.</p>
-                    <div class="product-price">2 290 ₽</div>
-                    <button class="product-button">Купить</button>
-                </div>
-            </div>
-            
-            <!-- Карточка БАДа 3 -->
-            <div class="product-card">
-                <img src="images/3.jpg" alt="Витамин D3" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Витамин D3 + K2</h3>
-                    <p class="product-description">Оптимальная комбинация витаминов для усвоения кальция, поддержки иммунитета и здоровья костей.</p>
-                    <div class="product-price">890 ₽</div>
-                    <button class="product-button">Купить</button>
-                </div>
-            </div>
-            
-             <!-- Карточка БАДа 4 -->
-             <div class="product-card">
-                <img src="images/4.webp" alt="Витамин D3" class="product-image">
-                <div class="product-info">
-                    <h3 class="product-title">Хелатное железо</h3>
-                    <p class="product-description">Железо поддерживает выработку красных кровяных телец и использование вырабатываемой в организме энергии.</p>
-                    <div class="product-price">2 690 ₽</div>
-                    <button class="product-button">Купить</button>
-                </div>
-            </div>         
-        </div>
-        
-        <button class="carousel-arrow next">&#10095;</button>
-        
-        <div class="carousel-nav" id="carousel-nav">
-            <div class="carousel-dot active"></div>
-            <div class="carousel-dot"></div>
-            <div class="carousel-dot"></div>
-        </div>
-    </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </section>
         <img class="review__wrap" src="images/photo2.png">
     <div class="review">
         <h2 class="review__title">Что о нас говорят клиенты</h2>
@@ -136,6 +129,7 @@
            <p>Лаптева А., Морокова А., Мустафина Д.</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts/script.js"></script>
     <!-- Кнопка "Наверх" -->
     <button id="back-to-top" title="Наверх">
