@@ -1,15 +1,15 @@
 
-.button{
+.buy-button{
     transition: background-color 0.3s,
                 color 0.3s;
 }
 
-.button:hover{
+.buy-button:hover{
     background-color: white;
     color: blue;
 }
 
-.button:active{
+.buy-button:active{
     background-color: blue;
     color: white;
 }
